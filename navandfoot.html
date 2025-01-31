@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar and Footer</title>
+    
+    <style>
+        .container-1 {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row ;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px ;
+            flex-wrap: wrap;
+        }
+        .box1{
+            flex: 1;
+            order: 1;
+            
+        }
+        .box2{
+            flex: 1;
+            order: 2;
+            
+        }
+        .box3{
+            flex: 1;
+            order: 3;
+            
+        }
+        .box4{
+            flex: 1;
+            order: 4;
+            
+        }
+        .box1 a, .box4 a {
+            color: white;
+            text-decoration: none;
+        }
+        .box1 a:hover, .box4 a:hover {
+            background-color: #575757;
+            color: white;
+        }
+        .box2, .box3 {
+            color: white;
+            text-align: center;
+        }
+
+
+        input[type='date'],{
+            text-align:center;
+            margin: 2px;
+            padding: 2px;
+        }
+        input[type='text']{
+            text-align: center;
+            margin: 4px;
+            padding: 4px;
+        }
+
+        .container-2 {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row ;
+            justify-content:center;
+            align-items: center;
+            padding: 10px ;
+            flex-wrap: wrap;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .container-2 a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 4px solid white;
+            border-width: 1px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-1">
+        
+        <div class="box1" >
+            <a  href="#filters">FILTERS</a>
+        </div>    
+        
+
+        <div class="box2">
+            <label>EVENT NAME</label>
+            <input type="text" class="search-box" placeholder="search for the event">
+        </div>
+        
+       
+        <div class="box3">    
+            <label>DATE</label>
+            <input type='date' class="date-box">
+        </div>
+            
+        <div class="box4" > 
+            <a href="#uploader">UPLOADER</a>
+        </div>
+    
+    </div>
+
+       
+    <div class="container-2">
+            <a>&copy; 2025, Your Website Name. All Rights Reserved.</a>
+    </div>
+    
+    
+    
+</body>
+</html>
+
